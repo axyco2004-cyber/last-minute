@@ -396,16 +396,15 @@ function createOfferCard(offer) {
 
     return `
         <div class="offer-card" onclick="window.open('https://www.${offer.provider}.se', '_blank')">
-            <div class="offer-image" style="background-image: url('${offer.image}'); background-size: cover; background-position: center;">
-                <div class="image-overlay"></div>
+            <div class="offer-image">
+                <span>${offer.icon}</span>
                 <div class="discount-badge">-${offer.discount}%</div>
                 <div class="departure-badge">${formatDate(offer.departure)}</div>
             </div>
             <div class="offer-content">
                 <div class="provider-badge ${offer.provider}">${offer.provider.toUpperCase()}</div>
-                <h3 class="offer-destination">${offer.destination}, ${offer.country}</h3>
+                <h3 class="offer-destination">${offer.destination}</h3>
                 <p class="offer-hotel">${offer.hotel}</p>
-                <p class="offer-description">${offer.description}</p>
                 <div class="offer-details">
                     <div class="detail-item">${stars}</div>
                     <div class="detail-item">📅 ${offer.duration}</div>
