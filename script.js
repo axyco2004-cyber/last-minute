@@ -285,6 +285,177 @@ const travelOffers = [
         category: 'turkey',
         image: 'https://images.unsplash.com/photo-1573052905904-34ad8c27f0cc?w=800',
         description: 'Ultra all-inclusive resort with ancient Roman ruins nearby and pristine Turkish beaches'
+    },
+    // Additional offers from other sources
+    {
+        id: 16,
+        provider: 'tui',
+        destination: 'Fuerteventura',
+        country: 'Spain',
+        hotel: 'Iberostar Playa Gaviotas',
+        rating: 4,
+        duration: '7 nights',
+        departure: '2026-01-21',
+        departureFrom: 'Copenhagen',
+        board: 'All Inclusive',
+        currentPrice: 5595,
+        originalPrice: 8495,
+        discount: 34,
+        icon: '🏄',
+        category: 'canary-islands'
+    },
+    {
+        id: 17,
+        provider: 'ving',
+        destination: 'Santorini',
+        country: 'Greece',
+        hotel: 'Vedema Resort',
+        rating: 5,
+        duration: '5 nights',
+        departure: '2026-01-25',
+        departureFrom: 'Copenhagen',
+        board: 'Breakfast',
+        currentPrice: 8995,
+        originalPrice: 12995,
+        discount: 31,
+        icon: '🏛️',
+        category: 'greece'
+    },
+    {
+        id: 18,
+        provider: 'apollo',
+        destination: 'Bodrum',
+        country: 'Turkey',
+        hotel: 'Mandarin Oriental',
+        rating: 5,
+        duration: '7 nights',
+        departure: '2026-01-23',
+        departureFrom: 'Copenhagen',
+        board: 'Half Board',
+        currentPrice: 7495,
+        originalPrice: 10995,
+        discount: 32,
+        icon: '⛵',
+        category: 'turkey'
+    },
+    {
+        id: 19,
+        provider: 'tui',
+        destination: 'Marrakech',
+        country: 'Morocco',
+        hotel: 'La Mamounia',
+        rating: 5,
+        duration: '4 nights',
+        departure: '2026-01-19',
+        departureFrom: 'Copenhagen',
+        board: 'Breakfast',
+        currentPrice: 6295,
+        originalPrice: 8995,
+        discount: 30,
+        icon: '🕌',
+        category: 'morocco'
+    },
+    {
+        id: 20,
+        provider: 'ving',
+        destination: 'Dubai',
+        country: 'UAE',
+        hotel: 'Atlantis The Palm',
+        rating: 5,
+        duration: '5 nights',
+        departure: '2026-01-27',
+        departureFrom: 'Copenhagen',
+        board: 'Breakfast',
+        currentPrice: 11995,
+        originalPrice: 16995,
+        discount: 29,
+        icon: '🏙️',
+        category: 'dubai'
+    },
+    {
+        id: 21,
+        provider: 'apollo',
+        destination: 'Sharm el-Sheikh',
+        country: 'Egypt',
+        hotel: 'Four Seasons Resort',
+        rating: 5,
+        duration: '7 nights',
+        departure: '2026-01-26',
+        departureFrom: 'Copenhagen',
+        board: 'All Inclusive',
+        currentPrice: 6495,
+        originalPrice: 9495,
+        discount: 32,
+        icon: '🏊',
+        category: 'egypt'
+    },
+    {
+        id: 22,
+        provider: 'tui',
+        destination: 'Dubrovnik',
+        country: 'Croatia',
+        hotel: 'Hotel Excelsior',
+        rating: 5,
+        duration: '4 nights',
+        departure: '2026-01-20',
+        departureFrom: 'Copenhagen',
+        board: 'Half Board',
+        currentPrice: 5795,
+        originalPrice: 7995,
+        discount: 28,
+        icon: '🏰',
+        category: 'croatia'
+    },
+    {
+        id: 23,
+        provider: 'ving',
+        destination: 'Maldives',
+        country: 'Maldives',
+        hotel: 'Anantara Dhigu Resort',
+        rating: 5,
+        duration: '7 nights',
+        departure: '2026-02-01',
+        departureFrom: 'Copenhagen',
+        board: 'All Inclusive',
+        currentPrice: 22995,
+        originalPrice: 32995,
+        discount: 30,
+        icon: '🏝️',
+        category: 'maldives'
+    },
+    {
+        id: 24,
+        provider: 'apollo',
+        destination: 'Corfu',
+        country: 'Greece',
+        hotel: 'Grecotel Corfu Imperial',
+        rating: 5,
+        duration: '7 nights',
+        departure: '2026-01-28',
+        departureFrom: 'Copenhagen',
+        board: 'Half Board',
+        currentPrice: 5395,
+        originalPrice: 7995,
+        discount: 33,
+        icon: '🌊',
+        category: 'greece'
+    },
+    {
+        id: 25,
+        provider: 'tui',
+        destination: 'Lisbon',
+        country: 'Portugal',
+        hotel: 'Pestana Palace',
+        rating: 5,
+        duration: '4 nights',
+        departure: '2026-01-18',
+        departureFrom: 'Copenhagen',
+        board: 'Breakfast',
+        currentPrice: 4995,
+        originalPrice: 6995,
+        discount: 29,
+        icon: '🏛️',
+        category: 'portugal'
     }
 ];
 
@@ -313,12 +484,14 @@ function init() {
     searchInput = document.getElementById('searchInput');
     lastUpdated = document.getElementById('lastUpdated');
 
-    // Set last updated date
+    // Set last updated date with time
     const today = new Date();
-    lastUpdated.textContent = today.toLocaleDateString('sv-SE', {
+    lastUpdated.textContent = today.toLocaleString('sv-SE', {
         year: 'numeric',
         month: 'long',
-        day: 'numeric'
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit'
     });
 
     // Setup event listeners
