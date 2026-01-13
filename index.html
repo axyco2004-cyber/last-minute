@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Last Minute Travel Deals - Best Offers from TUI, Ving & Apollo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>🌴 Last Minute Travel Deals</h1>
+            <p class="subtitle">Compare best offers from TUI, Ving & Apollo Sweden</p>
+            <div class="update-badge">Updated Daily • <span id="lastUpdated"></span></div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Search & Filter Section -->
+        <section class="filter-section">
+            <div class="filter-card">
+                <div class="filter-group">
+                    <label for="destinationFilter">🌍 Destination</label>
+                    <select id="destinationFilter">
+                        <option value="all">All Destinations</option>
+                        <option value="spain">Spain</option>
+                        <option value="greece">Greece</option>
+                        <option value="turkey">Turkey</option>
+                        <option value="egypt">Egypt</option>
+                        <option value="canary-islands">Canary Islands</option>
+                        <option value="thailand">Thailand</option>
+                        <option value="caribbean">Caribbean</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="providerFilter">🏢 Travel Agency</label>
+                    <select id="providerFilter">
+                        <option value="all">All Agencies</option>
+                        <option value="tui">TUI</option>
+                        <option value="ving">Ving</option>
+                        <option value="apollo">Apollo</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="sortFilter">📊 Sort By</label>
+                    <select id="sortFilter">
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="discount">Biggest Discount</option>
+                        <option value="departure">Departure Date</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="searchInput">🔍 Search</label>
+                    <input type="text" id="searchInput" placeholder="Search destination, hotel...">
+                </div>
+            </div>
+        </section>
+
+        <!-- Results Section -->
+        <section class="results-section">
+            <div class="results-header">
+                <h2 id="resultsCount">Loading offers...</h2>
+            </div>
+
+            <div class="offers-grid" id="offersGrid">
+                <!-- Offers will be populated by JavaScript -->
+            </div>
+
+            <div class="no-results" id="noResults" style="display: none;">
+                <div class="no-results-icon">✈️</div>
+                <h3>No offers found</h3>
+                <p>Try adjusting your filters or search term</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>🌟 All prices are per person based on 2 travelers. Prices include flights and accommodation.</p>
+            <p class="disclaimer">Book directly on agency websites • Prices may vary • Check availability before booking</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
