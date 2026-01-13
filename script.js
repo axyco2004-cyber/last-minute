@@ -16,7 +16,9 @@ const travelOffers = [
         originalPrice: 7995,
         discount: 38,
         icon: '🏝️',
-        category: 'spain'
+        category: 'spain',
+        image: 'https://images.unsplash.com/photo-1611060299344-deb2e0c73486?w=800',
+        description: 'Beautiful beachfront resort with stunning Mediterranean views and world-class golf facilities'
     },
     {
         id: 2,
@@ -33,7 +35,9 @@ const travelOffers = [
         originalPrice: 8995,
         discount: 39,
         icon: '🏛️',
-        category: 'greece'
+        category: 'greece',
+        image: 'https://images.unsplash.com/photo-1601581987809-a874a81309c9?w=800',
+        description: 'Luxury 5-star hotel in historic Rhodes with private beach and ancient ruins nearby'
     },
     {
         id: 3,
@@ -50,7 +54,9 @@ const travelOffers = [
         originalPrice: 6995,
         discount: 39,
         icon: '🕌',
-        category: 'turkey'
+        category: 'turkey',
+        image: 'https://images.unsplash.com/photo-1577003833154-a7e05e0f39c0?w=800',
+        description: 'Magnificent palace-style resort with ultra all-inclusive service on the Turkish Riviera'
     },
     {
         id: 4,
@@ -67,7 +73,9 @@ const travelOffers = [
         originalPrice: 9995,
         discount: 35,
         icon: '🌴',
-        category: 'canary-islands'
+        category: 'canary-islands',
+        image: 'https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=800',
+        description: 'Adults-only boutique hotel with rooftop pool and modern design in Playa del Ingles'
     },
     {
         id: 5,
@@ -84,7 +92,9 @@ const travelOffers = [
         originalPrice: 17995,
         discount: 28,
         icon: '🏖️',
-        category: 'thailand'
+        category: 'thailand',
+        image: 'https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?w=800',
+        description: 'Tropical paradise resort on famous Kata Beach with crystal clear waters and Thai hospitality'
     },
     {
         id: 6,
@@ -101,7 +111,9 @@ const travelOffers = [
         originalPrice: 8995,
         discount: 33,
         icon: '🐪',
-        category: 'egypt'
+        category: 'egypt',
+        image: 'https://images.unsplash.com/photo-1572252009286-268acec5ca0a?w=800',
+        description: 'Family-friendly resort with water park and Red Sea diving on Egypt\'s stunning coast'
     },
     {
         id: 7,
@@ -118,7 +130,9 @@ const travelOffers = [
         originalPrice: 8795,
         discount: 34,
         icon: '🏺',
-        category: 'greece'
+        category: 'greece',
+        image: 'https://images.unsplash.com/photo-1585672840992-c1fa28a97cfc?w=800',
+        description: 'Beachfront resort in Crete with traditional Greek architecture and Aegean Sea views'
     },
     {
         id: 8,
@@ -135,7 +149,9 @@ const travelOffers = [
         originalPrice: 7995,
         discount: 34,
         icon: '🌋',
-        category: 'canary-islands'
+        category: 'canary-islands',
+        image: 'https://images.unsplash.com/photo-1549144511-f099e773c147?w=800',
+        description: 'Modern hotel with ocean views near Mount Teide volcano and black sand beaches'
     },
     {
         id: 9,
@@ -152,7 +168,9 @@ const travelOffers = [
         originalPrice: 7495,
         discount: 35,
         icon: '⛵',
-        category: 'greece'
+        category: 'greece',
+        image: 'https://images.unsplash.com/photo-1580837119756-563d608dd119?w=800',
+        description: 'All-inclusive beachfront resort on the beautiful Greek island of Kos'
     },
     {
         id: 10,
@@ -169,7 +187,9 @@ const travelOffers = [
         originalPrice: 25995,
         discount: 27,
         icon: '🥥',
-        category: 'caribbean'
+        category: 'caribbean',
+        image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800',
+        description: 'Premium Caribbean resort with white sand beaches and turquoise waters in paradise'
     },
     {
         id: 11,
@@ -186,7 +206,9 @@ const travelOffers = [
         originalPrice: 6995,
         discount: 34,
         icon: '🏰',
-        category: 'turkey'
+        category: 'turkey',
+        image: 'https://images.unsplash.com/photo-1564868863346-3b3b653f6b4c?w=800',
+        description: 'Luxury ultra all-inclusive palace with private beach on the Mediterranean coast'
     },
     {
         id: 12,
@@ -203,7 +225,9 @@ const travelOffers = [
         originalPrice: 9495,
         discount: 26,
         icon: '🏛️',
-        category: 'spain'
+        category: 'spain',
+        image: 'https://images.unsplash.com/photo-1583422409516-2895a77efded?w=800',
+        description: 'Iconic 5-star hotel near the beach with stunning city views and Michelin-star dining'
     },
     {
         id: 13,
@@ -220,7 +244,9 @@ const travelOffers = [
         originalPrice: 10995,
         discount: 34,
         icon: '🌊',
-        category: 'canary-islands'
+        category: 'canary-islands',
+        image: 'https://images.unsplash.com/photo-1513415564515-763d91423bdd?w=800',
+        description: 'Exclusive suite hotel in volcanic Lanzarote with award-winning spa and fine dining'
     },
     {
         id: 14,
@@ -237,7 +263,9 @@ const travelOffers = [
         originalPrice: 9995,
         discount: 32,
         icon: '🏖️',
-        category: 'greece'
+        category: 'greece',
+        image: 'https://images.unsplash.com/photo-1580837119756-563d608dd119?w=800',
+        description: 'Luxurious beachfront hotel with Roman-inspired architecture and Mediterranean cuisine'
     },
     {
         id: 15,
@@ -254,7 +282,9 @@ const travelOffers = [
         originalPrice: 7495,
         discount: 33,
         icon: '🏺',
-        category: 'turkey'
+        category: 'turkey',
+        image: 'https://images.unsplash.com/photo-1573052905904-34ad8c27f0cc?w=800',
+        description: 'Ultra all-inclusive resort with ancient Roman ruins nearby and pristine Turkish beaches'
     }
 ];
 
@@ -366,15 +396,16 @@ function createOfferCard(offer) {
 
     return `
         <div class="offer-card" onclick="window.open('https://www.${offer.provider}.se', '_blank')">
-            <div class="offer-image">
-                <span>${offer.icon}</span>
+            <div class="offer-image" style="background-image: url('${offer.image}'); background-size: cover; background-position: center;">
+                <div class="image-overlay"></div>
                 <div class="discount-badge">-${offer.discount}%</div>
                 <div class="departure-badge">${formatDate(offer.departure)}</div>
             </div>
             <div class="offer-content">
                 <div class="provider-badge ${offer.provider}">${offer.provider.toUpperCase()}</div>
-                <h3 class="offer-destination">${offer.destination}</h3>
+                <h3 class="offer-destination">${offer.destination}, ${offer.country}</h3>
                 <p class="offer-hotel">${offer.hotel}</p>
+                <p class="offer-description">${offer.description}</p>
                 <div class="offer-details">
                     <div class="detail-item">${stars}</div>
                     <div class="detail-item">📅 ${offer.duration}</div>
