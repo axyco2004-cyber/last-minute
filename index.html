@@ -12,10 +12,16 @@
             <h1>🌴 Last Minute Travel Deals from Copenhagen</h1>
             <p class="subtitle">Aggregated from TUI, Ving, Apollo & 10+ travel sites • All departures from CPH Airport</p>
             <div class="update-badge">Auto-updated every 12 hours • Last update: <span id="lastUpdated"></span></div>
+            <nav class="main-nav">
+                <button class="nav-btn active" data-view="offers">Travel Deals</button>
+                <button class="nav-btn" data-view="matrix">Flight Search (ITA Matrix)</button>
+            </nav>
         </div>
     </header>
 
     <main class="container">
+        <!-- Travel Deals View -->
+        <div id="offersView" class="view-content active">
         <!-- Search & Filter Section -->
         <section class="filter-section">
             <div class="filter-card">
@@ -81,6 +87,22 @@
                 <p>Try adjusting your filters or search term</p>
             </div>
         </section>
+        </div>
+        
+        <!-- ITA Matrix View -->
+        <div id="matrixView" class="view-content">
+            <section class="matrix-section">
+                <div class="matrix-card">
+                    <h2>✈️ ITA Matrix Flight Search</h2>
+                    <p class="matrix-description">Advanced flight search tool by Google with flexible date searching and detailed fare analysis. Perfect for finding the cheapest flight options for your last-minute trips.</p>
+                    <div class="matrix-container">
+                        <iframe src="https://matrix.itasoftware.com/search" 
+                                title="ITA Matrix Flight Search"
+                                class="matrix-iframe"></iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer>

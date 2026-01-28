@@ -1,3 +1,29 @@
+// Navigation Handler
+document.addEventListener('DOMContentLoaded', () => {
+    const navBtns = document.querySelectorAll('.nav-btn');
+    const offersView = document.getElementById('offersView');
+    const matrixView = document.getElementById('matrixView');
+    
+    navBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const view = btn.dataset.view;
+            
+            // Update active button
+            navBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            
+            // Show appropriate view
+            if (view === 'offers') {
+                offersView.classList.add('active');
+                matrixView.classList.remove('active');
+            } else if (view === 'matrix') {
+                offersView.classList.remove('active');
+                matrixView.classList.add('active');
+            }
+        });
+    });
+});
+
 // Last Minute Travel Offers Data
 const travelOffers = [
     // TUI Offers
